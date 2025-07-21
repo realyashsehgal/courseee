@@ -1,0 +1,4 @@
+ct = ColumnTransformer(transformers = [('ohe_col1',OneHotEncoder(),[0]),
+                                     ('ord_col2',OrdinalEncoder(),[1])])
+df = ct.fit_transform(df)
+print(df)
